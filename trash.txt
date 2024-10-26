@@ -1,0 +1,74 @@
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://linkedin.com">LinkedIn</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #222; /* Dark background for the footer */
+    color: #ddd; /* Light gray text */
+    padding: 40px 20px; /* Increased padding */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Align text centrally */
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three-column layout */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-content p {
+    grid-column: 1 / -1; /* Make the copyright text span all columns */
+    margin: 10px 0;
+    font-size: 16px; /* Slightly smaller font for footer text */
+}
+
+.social-links {
+    display: flex; /* Display social links in a row */
+    justify-content: center; /* Center the links horizontally */
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0 15px; /* Increased spacing between social links */
+}
+
+.social-links a {
+    color: #ddd; /* Light gray color for links */
+    text-decoration: none;
+    font-size: 18px; /* Larger font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .social-links {
+        margin-top: 20px; /* Add some margin on small screens */
+    }
+}
